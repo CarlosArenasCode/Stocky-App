@@ -1,6 +1,6 @@
 # Product Vision Statement: Stocky-App
 
-**Proyecto:** SmartCommerce  
+**Proyecto:** Stocky-App  
 **Fecha:** 24 de Febrero de 2026  
 **Autor:** Carlos Arenas  
 
