@@ -1,4 +1,4 @@
-# Product Vision Statement: Stocky-App
+# MVP Scope: Stocky-App
 ---
 **Proyecto:** Stocky-App  
 **Fecha:** 24 de Febrero de 2026  
@@ -6,11 +6,11 @@
 
 ---
 
-## 🎯 Definición del Alcance Inicial (MVP)
+## Definición del Alcance Inicial (MVP)
 
 Basado en nuestra visión, el Producto Mínimo Viable (MVP) incluye únicamente las funcionalidades esenciales que resuelven el problema central sin distracciones. A continuación, el alcance para la primera versión:
 
-### 📦 Módulos del MVP
+### Módulos del MVP
 
 #### 1. Gestión de Usuarios y Autenticación
 * Registro e inicio de sesión seguros (con JWT y hashing de contraseñas).
@@ -39,7 +39,7 @@ Basado en nuestra visión, el Producto Mínimo Viable (MVP) incluye únicamente 
 
 ---
 
-### 🚫 Fuera del MVP (Para futuras versiones)
+### Fuera del MVP (Para futuras versiones)
 
 * Gestión de múltiples usuarios con roles (empleados vs. dueño).
 * Módulo de compras a proveedores.
