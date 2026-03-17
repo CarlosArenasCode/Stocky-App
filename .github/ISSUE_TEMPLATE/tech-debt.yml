@@ -1,0 +1,36 @@
+name: "Tech Debt / Refactor"
+description: "Deuda técnica, refactor o mejoras internas"
+title: "TECH: "
+labels: ["type:tech-debt"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: "Problema"
+      placeholder: "Qué está mal hoy (dolor técnico)"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: "Propuesta"
+      placeholder: "Qué cambio harías y por qué"
+    validations:
+      required: true
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: "Riesgos / Impacto"
+      placeholder: "Impacto en módulos, regresiones posibles, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: done
+    attributes:
+      label: "Criterio de completitud"
+      placeholder: "- Refactor aplicado\n- Tests actualizados\n- Sin cambios funcionales"
+    validations:
+      required: true
