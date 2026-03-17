@@ -14,21 +14,23 @@ Basado en nuestra visión, el Producto Mínimo Viable (MVP) incluye únicamente 
 
 #### 1. Gestión de Usuarios y Autenticación
 * Registro e inicio de sesión seguros (con JWT y hashing de contraseñas).
-* Perfil de usuario básico.
+* Cierre de sesión.
 
 #### 2. Gestión de Productos (Inventario)
-* **CRUD completo:** Crear, ver, editar y eliminar (o desactivar) productos.
+* **CRUD (Must):** Crear, ver y editar productos.
+* **Desactivar producto (borrado lógico):** El producto deja de aparecer en el listado activo pero el histórico de ventas se mantiene *(Should — ver HU-007).*
 * **Campos requeridos:** Nombre, descripción, precio de venta, cantidad en stock, stock mínimo (para alertas).
 * Listado de productos con búsqueda por nombre.
 * Visualización de alerta de stock bajo (cuando la cantidad sea menor o igual al stock mínimo).
 
 #### 3. Gestión de Clientes
-* **CRUD básico de clientes:** Nombre, teléfono, email (opcional).
+* **Alta de cliente (Must — ver HU-009):** Nombre, teléfono, email (opcional).
+* **Listado/edición/borrado lógico (Should — ver HU-010).**
 
 #### 4. Punto de Venta (Registro de Ventas)
 * Interfaz simple para buscar productos y agregarlos a un carrito de compras.
 * Visualización del total de la venta en tiempo real.
-* Posibilidad de seleccionar un cliente (o vender como "consumidor final").
+* **Seleccionar cliente (Should — ver HU-013)** o vender como "consumidor final".
 * **Al finalizar la venta:**
   * Se registra la venta con fecha, total, cliente y detalles de los productos vendidos.
   * Se descuenta automáticamente la cantidad vendida del inventario.
@@ -42,6 +44,7 @@ Basado en nuestra visión, el Producto Mínimo Viable (MVP) incluye únicamente 
 ### Fuera del MVP (Para futuras versiones)
 
 * Gestión de múltiples usuarios con roles (empleados vs. dueño).
+* Perfil de usuario básico.
 * Módulo de compras a proveedores.
 * Reportes gráficos avanzados (ventas por mes, productos más rentables).
 * Facturación electrónica o generación de comprobantes fiscales.
