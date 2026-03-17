@@ -1,0 +1,57 @@
+name: "User Story (HU)"
+description: "Historia de usuario para Stocky-App"
+title: "HU-XXX: "
+labels: ["type:feature", "needs-refinement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        **Instrucciones**
+        - Completa historia + criterios de aceptación.
+        - Agrega labels `area:*` y `priority:*`.
+        - Asigna Milestone (release) si entra a `MVP v1`.
+        - Story Points e Iteration se asignan en el **GitHub Project**.
+
+  - type: textarea
+    id: story
+    attributes:
+      label: "Historia (Como / Quiero / Para)"
+      placeholder: |
+        Como [tipo de usuario]
+        Quiero [acción]
+        Para [beneficio]
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance_criteria
+    attributes:
+      label: "Criterios de aceptación"
+      description: "Incluye happy path y al menos 1 caso inválido/error"
+      placeholder: |
+        1. Dado ..., cuando ..., entonces ...
+        2. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: business_rules
+    attributes:
+      label: "Reglas de negocio / Notas"
+      placeholder: |
+        - Validaciones:
+        - Restricciones:
+        - Consideraciones UX:
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: "Dependencias"
+      placeholder: |
+        - Bloqueada por: #
+        - Requiere: #
+        - Decisiones pendientes:
+    validations:
+      required: false
